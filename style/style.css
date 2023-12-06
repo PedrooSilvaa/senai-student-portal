@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#box a{
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: #e0dcdc;
+    height: 100vh;
+}
+
+div#menu{
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#nav_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+}
+
+#local-img {
+    padding: 40px 0;
+    display: flex;    
+    justify-content: center;
+    
+}
+
+#perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(181, 181, 181);
+    border-radius: 100%;
+    background-color: #e0dcdc;
+}
+#perfil i {
+    font-size: 45px;
+}
+
+#pai-grid {
+    display: grid;
+    grid-template-columns: 30px 100px 30px ;
+    margin: 10px;
+    padding-bottom: 150px ;
+}
+#box {
+    width: 5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+#local-img {
+    margin: 10px 0px;
+}
+
+#local_sair {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.table {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 50px ;
+    
+}
+
+.table td, tbody {
+    width: 1150px;
+}
+
+#tabela_local {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#pesquisa{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+
+}
+
+#pesquisa i {
+    margin-left: 10px;
+    background-color: white;
+}
+
+#caixa {
+    background-color: white;
+    width: 200px;
+    margin-top: 80px;
+    margin-right: 50px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+tr#principal td, th {
+    background-color: gray;
+}
