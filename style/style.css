@@ -11,11 +11,11 @@
 }
 
 main {
-    background-color: #e0dcdc;
     height: 100vh;
+    background-color: #e0dcdc;
 }
 
-div#menu{
+#menu{
     display: none;
 }
 #check{
@@ -23,21 +23,36 @@ div#menu{
 }
 
 #botao{
-    background-color: #e0dcdc;
+    background-color: green;
     height: 0;
+    width: 100px;
     position: fixed;
 }
 
 #menu-check{
+    z-index: 1;
+    position: absolute;
     display: block;
     cursor: pointer;
-    background-color: #e0dcdc;
     width: 250px;
     padding: 5px;
     margin: 0;
 }
-#check:checked ~ div#menu{
-    position: fixed;
+
+#botao label i{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+}
+#botao label {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+}
+#check:checked ~ #menu{
+    position: absolute;
     width: 250px;
     height: 100vh;
     background-color: white;
@@ -105,7 +120,7 @@ main #menu-check {
     display: flex;
     justify-content: end ;
     margin: 0 300px;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 tbody {
     width: 100%;
@@ -124,7 +139,6 @@ tbody {
     display: flex;
     justify-content: end;
     height: 100px;
-
 }
 
 #pesquisa i {
