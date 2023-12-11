@@ -16,14 +16,34 @@ main {
 }
 
 div#menu{
-    position: absolute;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+#botao{
+    background-color: #e0dcdc;
+    height: 0;
+    position: fixed;
+}
+
+#menu-check{
+    display: block;
+    cursor: pointer;
+    background-color: #e0dcdc;
+    width: 250px;
+    padding: 5px;
+    margin: 0;
+}
+#check:checked ~ div#menu{
+    position: fixed;
     width: 250px;
     height: 100vh;
     background-color: white;
     display: flex;
     justify-content: center;
 }
-
 #nav_menu {
     display: flex;
     justify-content: center;
@@ -50,7 +70,6 @@ img{
     margin-bottom: 0;
     height: 100px;
     width: 100px;
-    background-color: rgb(181, 181, 181);
     border-radius: 100%;
     background-color: #e0dcdc;
 }
@@ -79,17 +98,20 @@ img{
     font-size: 50px;
     margin-bottom: 30px;
 }
-
+main #menu-check {
+    display: none;
+}
 .table {
     display: flex;
-    justify-content: end;
+    justify-content: end ;
+    margin: 0 300px;
     margin-top: 20px;
-    margin-right: 50px ;
-    
 }
-
-.table td, tbody {
-    width: 1150px;
+tbody {
+    width: 100%;
+}
+.table td{
+    width: 20%;
 }
 
 #tabela_local {
@@ -113,8 +135,8 @@ img{
 #caixa {
     background-color: white;
     width: 200px;
+    margin: 0 300px;
     margin-top: 80px;
-    margin-right: 50px;
     height: 38px;
     display: flex;
     align-items: center;
@@ -123,3 +145,38 @@ img{
 tr#principal td, th {
     background-color: gray;
 }
+
+/* PARA FAZER COM Q O MENU SUMA AO DIMINUIR A TELA
+div#menu{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#menu-check{
+    display: none;
+    cursor: pointer;
+    background-color: #e0dcdc;
+    width: 250px;
+    padding: 5px;
+    margin: 0;
+}
+@media(max-width: 800px){
+    div#menu{
+        display: none;
+    }
+    #check:checked ~ div#menu{
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu-check{
+        display: block;
+}
+} */
