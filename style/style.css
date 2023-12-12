@@ -74,7 +74,6 @@ img{
     padding: 40px 0;
     display: flex;    
     justify-content: center;
-    
 }
 
 #perfil {
@@ -142,12 +141,18 @@ tbody {
 }
 
 #pesquisa i {
-    margin-left: 10px;
+    position: absolute;
+    margin-left: -27.5px;
+    padding: 4px;
+    background-color: white;
+    border: 2px black solid;
+}
+#caixa input {
+    border: 2px black solid;
     background-color: white;
 }
-
 #caixa {
-    background-color: white;
+    
     width: 200px;
     margin: 0 300px;
     margin-top: 80px;
@@ -194,3 +199,127 @@ div#menu{
         display: block;
 }
 } */
+
+#box label{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#check-dashboard {
+    display: none;
+}
+
+#lst-dashboard{
+    display: none;
+}
+
+#check-dashboard:checked ~ #lst-dashboard{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 160px;
+    margin-left: 75px;
+    padding: 14px;
+    border: 2px solid black;
+    border-left: 0px;
+    width: 170px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+#check-cadastro {
+    display: none;
+}
+
+#lst-cadastro{
+    display: none;
+}
+
+#check-cadastro:checked ~ #lst-cadastro{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 75px;
+    background-color: white;
+    padding: 14px;
+    border: 2px solid black;
+    border-left: 0px;
+    width: 170px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+#check-aluno {
+    display: none;
+}
+
+#lst-aluno{
+    display: none;
+}
+
+#check-aluno:checked ~ #lst-aluno{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 75px;
+    background-color: white;
+    padding: 14px;
+    border: 2px solid black;
+    border-left: 0px;
+    width: 170px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+#check-professor {
+    display: none;
+}
+
+#lst-professor{
+    display: none;
+}
+
+#check-professor:checked ~ #lst-professor{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 75px;
+    background-color: white;
+    padding: 14px;
+    border: 2px solid black;
+    border-left: 0px;
+    width: 170px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+#check-funcionario {
+    display: none;
+}
+
+#lst-funcionario{
+    display: none;
+}
+
+#check-funcionario:checked ~ #lst-funcionario{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 75px;
+    background-color: white;
+    padding: 14px;
+    border: 2px solid black;
+    border-left: 0px;
+    width: 170px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+
+#dash-check, #cad-check, #alu-check, #prof-check, #func-check {
+    cursor: pointer;
+}
+
+#box p {
+    cursor:pointer;
+    text-decoration: underline;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
