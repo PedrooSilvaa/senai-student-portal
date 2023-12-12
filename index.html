@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,19 +21,75 @@
                <div id="pai-grid">
                   <div id="box"><i class="fa-solid fa-chart-pie"></i></div>
                   <div id="box"><a href="#">Dashboard</a> </div>
-                  <div id="box"><i class="fa-solid fa-arrow-right"></i></div>
+
+                  <div id="box">
+                     <label for="check-dashboard"><i class="fa-solid fa-arrow-right" id="dash-check"></i></label>
+                     <input type="checkbox" id="check-dashboard">
+                     
+                     <div id="lst-dashboard">
+                        <p>DASHBOARD 1</p>
+                        <p>DASHBOARD 2</p>
+                        <p>DASHBOARD 3</p>
+                        <p>DASHBOARD 4</p>
+                     </div>
+                  </div>
+                  
                   <div id="box"><i class="fa-solid fa-clipboard"></i></div>
                   <div id="box"><a href="#">Cadastros</a></div>
-                  <div id="box"><i class="fa-solid fa-arrow-right"></i></div>
+
+                  <div id="box">
+                     <label for="check-cadastro"><i class="fa-solid fa-arrow-right" id="cad-check"></i></label>
+                     <input type="checkbox" id="check-cadastro">
+                     <div id="lst-cadastro">
+                        <p>CADASTRO 1</p>
+                        <p>CADASTRO 2</p>
+                        <p>CADASTRO 3</p>
+                        <p>CADASTRO 4</p>
+                     </div>
+                  </div>
+
                   <div id="box"><i class="fa-solid fa-graduation-cap"></i></div>
                   <div id="box"><a href="#">Alunos</a></div>
-                  <div id="box"><i class="fa-solid fa-arrow-right"></i></div>
-                  <div id="box"><i class="fa-solid fa-glasses"></i></div>
+
+                  <div id="box">
+                     <label for="check-aluno"><i class="fa-solid fa-arrow-right" id="alu-check"></i></label>
+                     <input type="checkbox" id="check-aluno">
+                     <div id="lst-aluno">
+                        <p>ALUNO 1</p>
+                        <p>ALUNO 2</p>
+                        <p>ALUNO 3</p>
+                        <p>ALUNO 4</p>
+                     </div>
+                  </div>
+
+                 <div id="box"><i class="fa-solid fa-glasses"></i></div>
                   <div id="box"><a href="#">Professores</a></div>
-                  <div id="box"><i class="fa-solid fa-arrow-right"></i></div>
+                  
+                  <div id="box">
+                     <label for="check-professor"><i class="fa-solid fa-arrow-right" id="prof-check"></i></label>
+                     <input type="checkbox" id="check-professor">
+                     <div id="lst-professor">
+                        <p>PROFESSOR 1</p>
+                        <p>PROFESSOR 2</p>
+                        <p>PROFESSOR 3</p>
+                        <p>PROFESSOR 4</p>
+                     </div>
+                  </div>
+
                   <div id="box"><i class="fa-solid fa-user-tie"></i></div>
                   <div id="box"><a href="#">Funcionários</a></div>
-                  <div id="box"><i class="fa-solid fa-arrow-right"></i></div>
+                 
+                  <div id="box">
+                     <label for="check-funcionario"><i class="fa-solid fa-arrow-right" id="func-check"></i></label>
+                     <input type="checkbox" id="check-funcionario">
+                     <div id="lst-funcionario">
+                        <p>FUNCIONÁRIO 1</p>
+                        <p>FUNCIONÁRIO 2</p>
+                        <p>FUNCIONÁRIO 3</p>
+                        <p>FUNCIONÁRIO 4</p>
+                     </div>
+                  </div>
+
                </div>
                <div id="perfil">
                   <i class="fa-solid fa-user"></i>
@@ -51,12 +107,11 @@
       <main>
          <div id="pesquisa">
             <nav id="caixa">
+               <input type="text" name="Nome" size="22px"/>
                <i class="fa-solid fa-magnifying-glass"></i>
             </nav>
          </div>
          <div id="tabela_local">
-             <!-- <label for="check"><i class="fa-solid fa-bars" id="menu-check"></i></label>
-         <input type="checkbox" id="check"> -->
             <table class="table table table-striped">
                <tbody>
                   <tr id="principal">
