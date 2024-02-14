@@ -327,6 +327,13 @@ div#menu{
 }
 
 @media(max-width: 800px){
+    #check:checked ~ #menu{
+        width: auto;
+    }
+    #pai-grid i, p, a{
+        font-size: 15px;
+    }
+
     #pesquisa{
         width: auto;
         height: auto;
